@@ -1,0 +1,22 @@
+PROCESS BEFORE OUTPUT.
+  MODULE FUNKTIONSTASTEN_652.
+  MODULE GET_PARAMETER_652.
+  MODULE SCREEN_MODIF_652.
+*
+PROCESS AFTER INPUT.
+  module abbrechen at exit-command.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

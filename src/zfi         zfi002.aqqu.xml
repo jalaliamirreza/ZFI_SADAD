@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <CLAS>ZFI002</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>Business Partner: General Data Report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00002</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Business Partner</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00003</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Account Group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00004</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Search term</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00053</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>کد اقتصادي</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00054</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>کد ملي</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00055</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>شماره شناسه ملي</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00056</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>شماره شناسامه</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZFI</NUM>
+     <QNUM>ZFI002</QNUM>
+     <TINDX>00057</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>شماره ثبت شرکت</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

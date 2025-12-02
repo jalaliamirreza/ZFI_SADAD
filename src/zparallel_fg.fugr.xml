@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>zparallel_fg</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZPARALLEL_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZPARALLEL_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CHECK_RESOURCES</FUNCNAME>
+     <SHORT_TEXT>Z_CHECK_RESOURCES</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_GROUP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RZLLI_APCL</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_SAFE_PERCENT</PARAMETER>
+       <DEFAULT>75</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>I</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_FREE_WP</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_GROUP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logon/Server Group Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_SAFE_PERCENT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_FREE_WP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

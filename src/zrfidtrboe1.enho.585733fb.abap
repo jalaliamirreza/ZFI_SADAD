@@ -1,0 +1,32 @@
+"Name: \PR:RFIDTRBOE1\FO:USER_COMMAND\SE:BEGIN\EI
+ENHANCEMENT 0 ZRFIDTRBOE1.
+*
+
+DATA: lv_txt(50).
+
+CASE 'X'.
+  WHEN x1.
+    WRITE TEXT-003 TO lv_txt.
+  WHEN x2.
+    WRITE TEXT-004 TO lv_txt.
+  WHEN x3.
+    WRITE TEXT-005 TO lv_txt.
+  WHEN x4.
+    WRITE TEXT-006 TO lv_txt.
+  WHEN x5.
+    WRITE TEXT-007 TO lv_txt.
+  WHEN x6.
+    WRITE TEXT-008 TO lv_txt.
+  WHEN x7.
+    WRITE TEXT-012 TO lv_txt.
+  WHEN x8.
+    WRITE TEXT-009 TO lv_txt.
+  WHEN x9.
+    WRITE TEXT-010 TO lv_txt.
+ENDCASE.
+
+EXPORT lv_txt TO MEMORY ID 'RFIDTRBOE1'.       "" Import in ZPROCESS_00001120
+
+
+
+ENDENHANCEMENT.

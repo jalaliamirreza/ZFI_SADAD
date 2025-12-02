@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_STVI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <STVI>
+    <SHDTVCIU>
+     <TCVARIANT>ZFBA6</TCVARIANT>
+     <TCODE>FBA6</TCODE>
+     <VERSION>3</VERSION>
+    </SHDTVCIU>
+    <SHDTTCIU>
+     <SHDTTCIU>
+      <LANGU>E</LANGU>
+      <TCVARIANT>ZFBA6</TCVARIANT>
+      <TCVTEXT>F-47 Transaction Variant</TCVTEXT>
+     </SHDTTCIU>
+    </SHDTTCIU>
+    <SHDTVSVCIU>
+     <SHDTVSVCIU>
+      <TCVARIANT>ZFBA6</TCVARIANT>
+      <SCVARIANT>ZFBA6_0112</SCVARIANT>
+     </SHDTVSVCIU>
+     <SHDTVSVCIU>
+      <TCVARIANT>ZFBA6</TCVARIANT>
+      <SCVARIANT>ZFBA6_0304</SCVARIANT>
+     </SHDTVSVCIU>
+    </SHDTVSVCIU>
+   </STVI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

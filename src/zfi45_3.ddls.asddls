@@ -1,0 +1,11 @@
+@AbapCatalog.sqlViewName: 'ZFI45_3'
+@ClientDependent: true
+@AbapCatalog.compiler.compareFilter: true
+@EndUserText.label: 'ZFI45_3'
+define view ZZFI45_3 as 
+SELECT DISTINCT FROM LFBK  
+LEFT OUTER JOIN TIBAN ON TIBAN.BANKS = LFBK.BANKS AND  TIBAN.BANKN = LFBK.BANKN AND TIBAN.BANKL = LFBK.BANKL --and tiban.mandt=100 
+{
+LFBK.LIFNR,TIBAN.BANKL,TIBAN.IBAN,TIBAN.BANKN,LFBK.BVTYP
+}
+--WHERE LFBK.MANDT=100

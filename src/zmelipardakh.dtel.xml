@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZMELIPARDAKH</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR10</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>کد ملي غیر ایرانی پرداخت کننده صورتحساب</DDTEXT>
+    <REPTEXT>کد ملي غیر ایرانی پرداخت کننده صورتحساب</REPTEXT>
+    <SCRTEXT_S>کد ملي غیر</SCRTEXT_S>
+    <SCRTEXT_M>کد ملي غیر ایرانی پر</SCRTEXT_M>
+    <SCRTEXT_L>کد ملي غیر ایرانی پرداخت کننده صورتحساب</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

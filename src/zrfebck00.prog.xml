@@ -1,0 +1,3264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZRFEBCK00</NAME>
+    <CLAS>KUSA</CLAS>
+    <SUBC>1</SUBC>
+    <APPL>F</APPL>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <CUA>
+    <ADM>
+     <ACTCODE>000001</ACTCODE>
+     <MENCODE>000004</MENCODE>
+     <PFKCODE>000001</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>STANDARD_ALV</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>000001</ACTCODE>
+      <PFKCODE>000001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Standard for ALV List Output</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>%ML</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Folder</FUN_TEXT>
+      <PATH>F</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SEARCH</TEXT_NAME>
+      <ICON_ID>@13@</ICON_ID>
+      <FUN_TEXT>Find</FUN_TEXT>
+      <PATH>F</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC+</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SEARCH_NEXT</TEXT_NAME>
+      <ICON_ID>@4E@</ICON_ID>
+      <FUN_TEXT>Find Next</FUN_TEXT>
+      <PATH>I</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SL</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_MAIL</TEXT_NAME>
+      <ICON_ID>@1S@</ICON_ID>
+      <FUN_TEXT>Mail Recipient</FUN_TEXT>
+      <PATH>M</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;ELP</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SYSTEM_HELP</TEXT_NAME>
+      <ICON_ID>@35@</ICON_ID>
+      <FUN_TEXT>Help</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;F03</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+      <PATH>B</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;F12</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+      <PATH>A</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;F15</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+      <PATH>X</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;IC1</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SELECT_DETAIL</TEXT_NAME>
+      <ICON_ID>@16@</ICON_ID>
+      <FUN_TEXT>Choose</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;ODN</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SORT_DOWN</TEXT_NAME>
+      <ICON_ID>@3F@</ICON_ID>
+      <FUN_TEXT>Sort in Descending Order</FUN_TEXT>
+      <PATH>O</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;OUP</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SORT_UP</TEXT_NAME>
+      <ICON_ID>@3E@</ICON_ID>
+      <FUN_TEXT>Sort in Ascending Order</FUN_TEXT>
+      <PATH>I</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>&amp;RNT</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_PRINT</TEXT_NAME>
+      <ICON_ID>@0X@</ICON_ID>
+      <FUN_TEXT>Print</FUN_TEXT>
+      <PATH>P</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P+</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Next Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P++</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Last Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P-</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Previous Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P--</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>First Page</FUN_TEXT>
+     </RSMPE_FUNT>
+    </FUN>
+    <MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>&amp;RNT</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>02</NO>
+      <REF_TYPE>M</REF_TYPE>
+      <REF_CODE>000002</REF_CODE>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>&amp;F15</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000002</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SL</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000002</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%ML</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000003</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SC</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000003</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SC+</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000003</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>&amp;F12</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000004</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>&amp;F03</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+    </MEN>
+    <MTX>
+     <RSMPE_MNLT>
+      <CODE>000001</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>List</TEXT>
+      <PATH>L</PATH>
+      <INT_NOTE>STANDARD List</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000002</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Send To</TEXT>
+      <PATH>S</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000003</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Edit</TEXT>
+      <PATH>E</PATH>
+      <INT_NOTE>STANDARD</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000004</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Goto</TEXT>
+      <PATH>G</PATH>
+      <INT_NOTE>STANDARD</INT_NOTE>
+     </RSMPE_MNLT>
+    </MTX>
+    <ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>01</NO>
+      <MENUCODE>000001</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>02</NO>
+      <MENUCODE>000003</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>03</NO>
+      <MENUCODE>000004</MENUCODE>
+     </RSMPE_ACT>
+    </ACT>
+    <BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>000001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>01</NO>
+      <PFNO>28</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>000001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>02</NO>
+      <PFNO>40</PFNO>
+     </RSMPE_BUT>
+    </BUT>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>01</PFNO>
+      <FUNCODE>&amp;ELP</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>02</PFNO>
+      <FUNCODE>&amp;IC1</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>&amp;F03</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>&amp;F12</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>&amp;F15</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>28</PFNO>
+      <FUNCODE>&amp;OUP</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>40</PFNO>
+      <FUNCODE>&amp;ODN</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>71</PFNO>
+      <FUNCODE>%SC</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>80</PFNO>
+      <FUNCODE>P--</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>81</PFNO>
+      <FUNCODE>P-</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>82</PFNO>
+      <FUNCODE>P+</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>83</PFNO>
+      <FUNCODE>P++</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>84</PFNO>
+      <FUNCODE>%SC+</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>86</PFNO>
+      <FUNCODE>&amp;RNT</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%CH</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%ML</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%PC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%SC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%SC+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>%SL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ABC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ALL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;AQW</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;AUF</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;AVE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;AVR</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;BS</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;BS+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;BS-</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CDF</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CFI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;COUNT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CRB</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CRE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CRL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;CRR</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;DAU</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;DOF</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;DON</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;EB3</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;EB9</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ELP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ERW</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ETA</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;F03</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;F12</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;F15</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;IC1</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ILD</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ILT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;KOM</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;LFO</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;LIS</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;MAX</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;MIN</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;NFO</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;NTE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OAD</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;ODN</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OL0</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OLX</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OMP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OPT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;OUP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;RNT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;SAL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;SUM</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;UMC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;XML</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;XPA</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>&amp;XXL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BAC1</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BEB1</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BEB2</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BEB3</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BEB9</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>BEBN</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>COL0</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>COLX</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>DETA</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>DRUK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>DSAL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>ENTE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>EXIT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>EXPA</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>FILD</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>FILT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>GLIS</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>HELP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>HTML</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>INFO</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>KOMP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>P+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>P++</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>P-</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>P--</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PF09</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PF13</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PIC1</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PICK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PRI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PRIN</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>PRNT</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>RW</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SALL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SAUF</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SAVE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SCRB</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SCRE</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SCRL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SCRR</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SKOM</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SODN</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SOUP</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>SUMC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>STANDARD_ALV</STATUS>
+      <FUNCTION>ZSUM</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Standard User Interface         STANDARD</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <NORM>X</NORM>
+      <INT_NOTE>Standard Maximum Interaction</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Standard Maximum Interaction</INT_NOTE>
+     </RSMPE_ATRT>
+    </DOC>
+   </CUA>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Check File &amp; Printout</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Processing log</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Batch input log session &amp;</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Posting log</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>****     Test run    **     Test run    **     Test run    **     Test run    **     Test run    **     Test run    **        ****</ENTRY>
+     <LENGTH>130</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>**********************************************************************************************************************************</ENTRY>
+     <LENGTH>130</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Check number &amp;: The document number &amp;, found in the check register does not exist                            will be made</ENTRY>
+     <LENGTH>121</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Check number &amp;: Not posted. Check is not in check register or in document database</ENTRY>
+     <LENGTH>103</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Check number &amp;: Check already marked as &quot;cashed&quot; in check register -&gt; no posting will be made</ENTRY>
+     <LENGTH>99</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>in the document database -&gt; no posting will be made                                                         made</ENTRY>
+     <LENGTH>112</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>Check number &amp;: Document number &amp; already cleared, therefore no posting made</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Check number &amp;: document number &amp;: check amount not equal to document amount</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Check number &amp;: document number &amp;: all specifications correct.</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>Check number &amp;: document &amp; contains no line items with G/L account a valid outgoing check account -&gt;  no posting will be made</ENTRY>
+     <LENGTH>125</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Check number &amp;: In document database, but not in check register.                                             will not be updated.</ENTRY>
+     <LENGTH>129</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>Check number &amp;: Payroll accounting check</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>Check number &amp;: FI document found.</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Check number &amp;: Not posted! Check invalid! Voided by &amp; on &amp; - &amp;.</ENTRY>
+     <LENGTH>75</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>Check number &amp;: Check appears in several payment methods in check register - no posting.</ENTRY>
+     <LENGTH>95</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>If no errors in document &amp; or account &amp;,</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>then account &amp; must be flagged as &apos;&apos;cash transaction-relevant&apos; (field SKB1-XGKON)</ENTRY>
+     <LENGTH>81</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>025</KEY>
+     <ENTRY>Check the transaction manually</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>026</KEY>
+     <ENTRY>Company code: &amp;  House bank: &amp;  Acct ID: &amp;  Pmnt method: &amp; Currency: &amp;</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>027</KEY>
+     <ENTRY>Amount:</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>028</KEY>
+     <ENTRY>No posting - there is no clearing account defined in the Customizing settings for the payment program.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>030</KEY>
+     <ENTRY>Header record</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>031</KEY>
+     <ENTRY>Bank Key:</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>032</KEY>
+     <ENTRY>Bank short key:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>033</KEY>
+     <ENTRY>Account number:</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>034</KEY>
+     <ENTRY>Account short key:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>035</KEY>
+     <ENTRY>No posting. Manual payroll accounting check</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>040</KEY>
+     <ENTRY>No Cashing Date, But Cheque Still Flagged as &apos;Cashed&apos;</ENTRY>
+     <LENGTH>65</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>042</KEY>
+     <ENTRY>Selected document no.:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>043</KEY>
+     <ENTRY>The session &amp; was created. It contains &amp; transactions.</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>044</KEY>
+     <ENTRY>Test run: The session &amp; was not created. It contains &amp; transactions in a production run.</ENTRY>
+     <LENGTH>89</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>045</KEY>
+     <ENTRY>Test run: No update in table PAYR</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>046</KEY>
+     <ENTRY>Check in check register marked as &quot;cashed&quot;</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>047</KEY>
+     <ENTRY>Error when trying to mark the check as &quot;cashed&quot; in the check register</ENTRY>
+     <LENGTH>81</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>048</KEY>
+     <ENTRY>Document &amp; was posted in company code &amp;.</ENTRY>
+     <LENGTH>41</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>049</KEY>
+     <ENTRY>Document could not be found. Data generated for batch input.</ENTRY>
+     <LENGTH>65</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>051</KEY>
+     <ENTRY>G/L account</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>052</KEY>
+     <ENTRY>Value date</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>053</KEY>
+     <ENTRY>HR checks</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>054</KEY>
+     <ENTRY>Compressed check numbers of HR posting:</ENTRY>
+     <LENGTH>43</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>055</KEY>
+     <ENTRY>Total amount:</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>056</KEY>
+     <ENTRY>No HR checks posted (parameters)</ENTRY>
+     <LENGTH>47</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>057</KEY>
+     <ENTRY>Make postings manually</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>058</KEY>
+     <ENTRY>Business Area:</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>059</KEY>
+     <ENTRY>Day of execution:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>060</KEY>
+     <ENTRY>&gt;&gt;&gt;&gt; Error  &amp; &amp;:</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>061</KEY>
+     <ENTRY>Identification:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>062</KEY>
+     <ENTRY>Total no.:</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>063</KEY>
+     <ENTRY>Total number or payroll accounting checks:</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>064</KEY>
+     <ENTRY>Warning: Check is NOT marked as &quot;cashed&quot; is check register</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>065</KEY>
+     <ENTRY>Payment Method:</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>066</KEY>
+     <ENTRY>Manual checks (no posting)</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>067</KEY>
+     <ENTRY>Total number of checks selected for posting:</ENTRY>
+     <LENGTH>47</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>068</KEY>
+     <ENTRY>===============</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>069</KEY>
+     <ENTRY>Of which:</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>070</KEY>
+     <ENTRY>successfully posted/transactions</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>071</KEY>
+     <ENTRY>No posting/transactions</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>072</KEY>
+     <ENTRY>No posting (parameters)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>073</KEY>
+     <ENTRY>Check number &amp;: No posting - no FI document found.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>074</KEY>
+     <ENTRY>No offsetting account (no posting)</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>075</KEY>
+     <ENTRY>Total number of other prenumbered checks:</ENTRY>
+     <LENGTH>55</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>076</KEY>
+     <ENTRY>Erroneous document number (no posting)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>077</KEY>
+     <ENTRY>No valid line item (no posting)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>078</KEY>
+     <ENTRY>No open line item (no posting)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>079</KEY>
+     <ENTRY>Amounts agree</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>080</KEY>
+     <ENTRY>Amounts do not agree (=&gt; batch input)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>081</KEY>
+     <ENTRY>Total number of checks to be processed:</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>082</KEY>
+     <ENTRY>Check number not in document database</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>083</KEY>
+     <ENTRY>Prenumbered checks with</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>084</KEY>
+     <ENTRY>nor in check register (no posting)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>085</KEY>
+     <ENTRY>several payment methods (no posting)</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>086</KEY>
+     <ENTRY>Prenumbered checks</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>087</KEY>
+     <ENTRY>Non-prenumbered checks</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>088</KEY>
+     <ENTRY>Total number of checks that can be processed:</ENTRY>
+     <LENGTH>55</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>089</KEY>
+     <ENTRY>Total number of prenumbered checks:</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>090</KEY>
+     <ENTRY>Invalid according to check register</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>094</KEY>
+     <ENTRY>Already cashed accord. to check register</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>096</KEY>
+     <ENTRY>Payroll checks</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>097</KEY>
+     <ENTRY>Other prenumbered checks</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>098</KEY>
+     <ENTRY>Total number of valid prenumbered checks:</ENTRY>
+     <LENGTH>55</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>099</KEY>
+     <ENTRY>Check number not in document database</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>100</KEY>
+     <ENTRY>File specifications</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>101</KEY>
+     <ENTRY>Posting parameters</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>102</KEY>
+     <ENTRY>Output control</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>103</KEY>
+     <ENTRY>Post immediately</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>104</KEY>
+     <ENTRY>Generate batch input</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>105</KEY>
+     <ENTRY>Post payroll checks</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>106</KEY>
+     <ENTRY>Do not post (test run)</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>107</KEY>
+     <ENTRY>Total number of non-prenumbered checks:</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>108</KEY>
+     <ENTRY>(no posting)</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>109</KEY>
+     <ENTRY>Amounts do not agree</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>110</KEY>
+     <ENTRY>If everything here is OK, posting takes place. Check register is not updated.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>111</KEY>
+     <ENTRY>No posting - the check amount does not agree with the amount in the check register.</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>112</KEY>
+     <ENTRY>Different amount (no posting)</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>113</KEY>
+     <ENTRY>Total number of checks to be processed in file:</ENTRY>
+     <LENGTH>55</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>114</KEY>
+     <ENTRY>Company code:</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>120</KEY>
+     <ENTRY>Check number &amp;: Document number &amp;: No unique cash-relevant account</ENTRY>
+     <LENGTH>77</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>121</KEY>
+     <ENTRY>If document &amp; and account &amp; are not correct,</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>122</KEY>
+     <ENTRY>account &amp; may not be marked as &quot;cash-relevant&quot; (field SKB1-XGKON)</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>130</KEY>
+     <ENTRY>Check number &amp;:</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>131</KEY>
+     <ENTRY>Posting Log</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>132</KEY>
+     <ENTRY>Curr.</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>133</KEY>
+     <ENTRY>Statistic</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>134</KEY>
+     <ENTRY>Messages on Checks</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>135</KEY>
+     <ENTRY>Amount</ENTRY>
+     <LENGTH>6</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>136</KEY>
+     <ENTRY>Checks Compressed in an HR Posting</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Cashed Checks</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CK_FILE</KEY>
+     <ENTRY>Check file with file path</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>GROUP</KEY>
+     <ENTRY>Session name</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>HR_POST</KEY>
+     <ENTRY>Post payroll acctg checks</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>I_BLART</KEY>
+     <ENTRY>Document type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>I_BLDAT</KEY>
+     <ENTRY>Document date</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>I_BUDAT</KEY>
+     <ENTRY>Posting date</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PA_XBDC</KEY>
+     <ENTRY>Generate batch input</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCUPLOAD</KEY>
+     <ENTRY>PC upload</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PNUMC</KEY>
+     <ENTRY>Prenumbered Checks</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>POST</KEY>
+     <ENTRY>Post immediately</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FILE</KEY>
+     <ENTRY>Print file</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_POST</KEY>
+     <ENTRY>Print posting log</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PROT</KEY>
+     <ENTRY>Detailed log</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>TESTRUN</KEY>
+     <ENTRY>Test run (do not post)</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Ausdruck Scheckfile &amp;</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Verarbeitungsprotokoll</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Batch-Input Protokoll Mappe &amp;</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Verbuchungsprotokoll</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>****     Testrun     **     Testrun     **     Testrun     **     Testrun     **     Testrun     **     Testrun     **        ****</ENTRY>
+       <LENGTH>130</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>**********************************************************************************************************************************</ENTRY>
+       <LENGTH>130</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Die im Scheckregister gefundene Belegnummer &amp; existiert nicht</ENTRY>
+       <LENGTH>116</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Scheck ist weder im Scheckregister noch in der Belegdatenbank enthalten.</ENTRY>
+       <LENGTH>103</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Scheck ist im Scheckregister bereits als &apos;eingelöst&apos; gekennzeichnet.</ENTRY>
+       <LENGTH>99</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>auf der Belegdatenbank.</ENTRY>
+       <LENGTH>89</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Belegnummer &amp; ist bereits ausgeglichen.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>Schecknummer &amp;: Belegnummer &amp;: Scheckbetrag ungleich Belegbetrag</ENTRY>
+       <LENGTH>64</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>Schecknummer &amp;: Belegnummer &amp;: Alle Angaben korrekt</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Beleg &amp; enthält keine Buchungszeile mit gültigem Scheckausgangskonto.</ENTRY>
+       <LENGTH>100</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>Schecknummer &amp;: Nicht im Scheckregister aber in Belegdatenbank.</ENTRY>
+       <LENGTH>128</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>Schecknummer &amp;: Personalabrechnungsscheck</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>Schecknummer &amp;: FI-Beleg gefunden.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>021</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Scheck ungültig! Entwertet durch &amp; am &amp; - &amp;.</ENTRY>
+       <LENGTH>75</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>022</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Scheck ist unter mehreren Zahlwegen im Scheckregister enthalten.</ENTRY>
+       <LENGTH>95</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>023</KEY>
+       <ENTRY>Falls Beleg &amp; und Konto &amp; korrekt sind,</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>024</KEY>
+       <ENTRY>muß Konto &amp; als &apos;Geldbewegungsrelevant&apos; (Feld SKB1-XGKON) markiert werden</ENTRY>
+       <LENGTH>73</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>025</KEY>
+       <ENTRY>Sie müssen den Vorgang manuell überprüfen!</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>026</KEY>
+       <ENTRY>Buchungskreis: &amp;  Hausbank: &amp;  Konto-Id: &amp;  Zahlweg: &amp;  Währung: &amp;</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>027</KEY>
+       <ENTRY>Betrag:</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>028</KEY>
+       <ENTRY>Keine Buchung! Kein Verrechnungskonto im Customizing des Zahlprogramms hinterlegt.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>030</KEY>
+       <ENTRY>Headersatz</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>031</KEY>
+       <ENTRY>Bankschlüssel:</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>032</KEY>
+       <ENTRY>Bankkurzschlüssel:</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>033</KEY>
+       <ENTRY>Kontonummer:</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>034</KEY>
+       <ENTRY>Kontokurzschlüssel:</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>035</KEY>
+       <ENTRY>Keine Buchung! Manueller Personalabrechnungsscheck</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>040</KEY>
+       <ENTRY>Kein Einlösedatum, trotzdem Scheck als &apos;eingelöst&apos; gekennzeichnet</ENTRY>
+       <LENGTH>65</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>042</KEY>
+       <ENTRY>selekierte Belegnummer:</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>043</KEY>
+       <ENTRY>Die Mappe &amp; wurde erstellt. Sie enthält &amp; Transaktionen.</ENTRY>
+       <LENGTH>56</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>044</KEY>
+       <ENTRY>Testrun: Die Mappe &amp; wurde nicht erstellt. Bei einem Echtrun enthält sie &amp; Transaktionen.</ENTRY>
+       <LENGTH>89</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>045</KEY>
+       <ENTRY>Testrun: Kein Update im Scheckregister</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>046</KEY>
+       <ENTRY>Scheck im Scheckregister als &apos;eingelöst&apos; gekennzeichnet.</ENTRY>
+       <LENGTH>56</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>047</KEY>
+       <ENTRY>Fehler beim Versuch den Scheck im Scheckregister als &apos;eingelöst&apos; zu kennzeichnen.</ENTRY>
+       <LENGTH>81</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>048</KEY>
+       <ENTRY>Beleg &amp; wurde im Buchungskreis &amp; gebucht.</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>049</KEY>
+       <ENTRY>Beleg konnte nicht gebucht werden. Daten für Batch Input erzeugt.</ENTRY>
+       <LENGTH>65</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>051</KEY>
+       <ENTRY>Sachkonto</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>052</KEY>
+       <ENTRY>Valutadatum</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>053</KEY>
+       <ENTRY>HR-Schecks</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>054</KEY>
+       <ENTRY>Schecknummern der komprimierten HR-Buchung:</ENTRY>
+       <LENGTH>43</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>055</KEY>
+       <ENTRY>Gesamtbetrag:</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>056</KEY>
+       <ENTRY>Es wurden keine HR-Schecks gebucht (Parameter)!</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>057</KEY>
+       <ENTRY>Sie müssen manuell buchen!</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>058</KEY>
+       <ENTRY>Geschäftsbereich:</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>059</KEY>
+       <ENTRY>Tag der Ausführung:</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>060</KEY>
+       <ENTRY>&gt;&gt;&gt;&gt; Fehler &amp; &amp;:</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>061</KEY>
+       <ENTRY>Identifikation:</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>062</KEY>
+       <ENTRY>Gesamtzahl:</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>063</KEY>
+       <ENTRY>Gesamtzahl Personalabrechnungsschecks:</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>064</KEY>
+       <ENTRY>Achtung! Scheck im Scheckregister NICHT als &apos;eingelöst&apos; gekennzeichnet</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>065</KEY>
+       <ENTRY>Zahlweg:</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>066</KEY>
+       <ENTRY>manuelle Schecks (keine Buchung)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>067</KEY>
+       <ENTRY>Gesamtzahl zur Verbuchung selektierter Schecks:</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>068</KEY>
+       <ENTRY>===============</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>069</KEY>
+       <ENTRY>davon</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>erfolgreich gebucht / Transaktionen</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>keine Buchung / Transaktionen</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>keine Buchung (Parameter!)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Schecknummer &amp;: Keine Buchung! Kein FI-Beleg gefunden.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>kein Gegenkonto (keine Buchung)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Gesamtzahl andere vornumerierte Schecks:</ENTRY>
+       <LENGTH>55</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Fehlerhafte Belegnummer (keine Buchung)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>keine gültige Belegzeile (keine Buchung)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>keine offene Belegzeile (keine Buchung)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>Beträge übereinstimmend</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>080</KEY>
+       <ENTRY>Beträge abweichend (=&gt; Batch-Input)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Gesamtzahl zu verarbeitender Schecks:</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Schecknummer weder in Belegdatenbank</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>vornumerierte Schecks mit</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>noch im Scheckregister (keine Buchung)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>mehreren Zahlwegen (keine Buchung)</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>vornumerierte Schecks</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>nichtvornumerierte Schecks</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Gesamtzahl verarbeitbarer Schecks:</ENTRY>
+       <LENGTH>55</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Gesamtzahl vornumerierte Schecks:</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>090</KEY>
+       <ENTRY>ungültig laut Scheckregister</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>094</KEY>
+       <ENTRY>bereits eingelöst laut Scheckregister</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>096</KEY>
+       <ENTRY>Personalabrechnungsschecks</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>097</KEY>
+       <ENTRY>andere vornumerierte Schecks</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>098</KEY>
+       <ENTRY>Gesamtzahl gültiger vornumerierter Schecks:</ENTRY>
+       <LENGTH>55</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>099</KEY>
+       <ENTRY>Schecknummer nicht in Belegdatenbank</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Dateiangaben</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Buchungsparameter</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>102</KEY>
+       <ENTRY>Ausgabesteuerung</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>103</KEY>
+       <ENTRY>Sofort buchen</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>104</KEY>
+       <ENTRY>Batch-Input erzeugen</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>105</KEY>
+       <ENTRY>Personalabrechnungsschecks buchen</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>106</KEY>
+       <ENTRY>Nicht Buchen (Testlauf)</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>107</KEY>
+       <ENTRY>Gesamtzahl nichtvornumerierte Schecks:</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>108</KEY>
+       <ENTRY>(keine Buchung)</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>109</KEY>
+       <ENTRY>Beträge abweichend</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Falls dort alles ok ist, wird gebucht. Kein Update im Scheckregister.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Keine Buchung! Der Betrag des Schecks stimmt nicht mit dem Betrag im Scheckregister überein.</ENTRY>
+       <LENGTH>100</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>112</KEY>
+       <ENTRY>abweichender Betrag (keine Buchung)</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>113</KEY>
+       <ENTRY>Gesamtzahl zu verarbeitender Schecks in Datei:</ENTRY>
+       <LENGTH>55</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>114</KEY>
+       <ENTRY>Buchungskreis:</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>120</KEY>
+       <ENTRY>Schecknummer &amp;: Belegnummer &amp;: Kein eindeutiges geldbewegungsrelevantes Konto</ENTRY>
+       <LENGTH>77</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>Falls Beleg &amp; und Konto &amp; _nicht_ korrekt sind,</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>darf Konto &amp; _nicht_ als &apos;Geldbewegungsrelevant&apos; (Feld SKB1-XGKON) markiert werden</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>130</KEY>
+       <ENTRY>Schecknummer &amp;:</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>131</KEY>
+       <ENTRY>Buchungsprotokoll</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>132</KEY>
+       <ENTRY>Währung</ENTRY>
+       <LENGTH>7</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>133</KEY>
+       <ENTRY>Statistik</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>134</KEY>
+       <ENTRY>Nachrichten zu Schecks</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>135</KEY>
+       <ENTRY>Betrag</ENTRY>
+       <LENGTH>6</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>136</KEY>
+       <ENTRY>In einer HR-Buchung komprimierte Schecks</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Scheckrücklauf</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CK_FILE</KEY>
+       <ENTRY>Scheckdatei mit Pfadname</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>GROUP</KEY>
+       <ENTRY>Mappenname</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>HR_POST</KEY>
+       <ENTRY>HR-Schecks buchen</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>I_BLART</KEY>
+       <ENTRY>Belegart</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>I_BLDAT</KEY>
+       <ENTRY>Belegdatum</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>I_BUDAT</KEY>
+       <ENTRY>Buchungsdatum</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PA_XBDC</KEY>
+       <ENTRY>Batch-Input erzeugen</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCUPLOAD</KEY>
+       <ENTRY>PC-Upload</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PNUMC</KEY>
+       <ENTRY>Vornumerierte Schecks</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POST</KEY>
+       <ENTRY>Sofort Buchen</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>Datei drucken</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_POST</KEY>
+       <ENTRY>Buchungsprotokoll drucken</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_PROT</KEY>
+       <ENTRY>Ausführliches Protokoll</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TESTRUN</KEY>
+       <ENTRY>Nicht Buchen (Testlauf)</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZRFEBCK00</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00126</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZRFEBCK00</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Report RFEBCK00 liest die von der Bank gelieferten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Scheckrücklaufdaten ein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Report kann sowohl vornumerierte Schecks als auch FI Schecks (d.h.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Schecks, die als Schecknummer eine vom SAP System vergebene Belegnummer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tragen) verarbeiten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Durch Setzen des Schalters &apos;Vornumerierte Schecks&apos; legen Sie fest,  um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welche Art von zu verarbeitenden Schecks es sich handelt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Bei vornumerierten Schecks unterscheidet der Report zwischen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Personalabrechnungsschecks und anderen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Personalabrechnungsschecks&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Alle Personalabrechnungsschecks, die vom System anhand der in der Datei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>angelieferten Schecknummer als solche identifiziert werden und weder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entwertet noch bereits eingelöst sind, werden als &apos;eingelöst&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gekennzeichnet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Bei Schecks, die bereits eingelöst oder entwertet wurden, wird eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>diesbezügliche Meldung ausgegeben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das System gruppiert die Personalabrechnungsschecks nach den Kriterien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Identifikation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Datum der Ausführung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Geschäftsbereich</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Währung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>aus dem Scheckregister.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Nach diesen Kriterien gruppierte Schecks werden mit ihren Schecknummern</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>nach den o.g. Kriterien aufgelistet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Jede Gruppe kann nun komprimiert als Summenbuchung akonto gebucht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Verrechnungskonto an Bankkonto), wenn das Flag</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;Personalabrechnungsschecks buchen&apos; auf dem Selektionsbildschirm</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ist die Buchung erfolgreich, so wird die Belegnummer der Buchung bei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>jedem Scheck der komprimierten Buchung im Scheckregister gespeichert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dies erlaubt festzustellen, welche Schecks gemeinsam als ein Beleg</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gebucht wurden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In das Feld &apos;Zuordnungsnummer&apos; der Belegzeilen werden das Datum der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ausführung und die Identifikation gestellt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ist das Flag &apos;Personalabrechnungsschecks buchen&apos; nicht gesetzt, findet</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>keine Buchung statt. In diesem Fall werden zusätzlich der Gesamtbetrag</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und die Währung der Summenbuchung auf der Liste ausgegeben. Sie müssen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die Buchung dann manuell ausführen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Bitte beachten Sie:&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Sollen Personalabrechnungsschecks gebucht werden, müssen Sie immer das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Flag &apos;Sofort buchen&apos; setzen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Andere Schecks&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Für diese Schecks erzeugt der Report RFEBCK00 Ausgleichsbuchungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Scheckausgangskonto an Bankkonto). Außerdem kennzeichnet er die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erfolgreich verbuchbaren Schecks im Scheckregister als &apos;eingelöst&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Ausgleichsbuchungen können in eine Batch-Input-Mappe gestellt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden (Batch-Input-Modus) oder sofort gebucht werden (Call</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Transaction-Modus).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Übergreifend&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Da in den USA und den meisten anderen Ländern kein Standard für</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Scheckrücklaufdaten existiert, ist ein Vorlaufreport notwendig, der das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Format der Bank in das Eingangsformat dieses Reports umwandelt. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eingangsformat dieses Reports besteht aus zwei Satztypen: Kopfsätze</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(CHECK_HEAD) und Einzelsätze (CHECK_REC).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Pro Bankkonto, auf dem Schecks belastet werden, ist ein Kopfsatz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(CHECK_HEAD) notwendig. In diesem Satztyp steht insbesondere der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bankschlüssel (Bankleitzahl) und das Bankkonto. Mit diesen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Informationen wird die Hausbankentabelle gelesen, um den Buchungskreis</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und das Hauptbuchkonto für die Bank zu ermitteln.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Pro Scheck ist ein Einzelsatz erforderlich (CHECK_REC).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Strukturen CHECK_HEAD und CHECK_REC sind im Repository (Data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dictionary) definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Batch-Input Modus:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Falls keine Fehler auftreten, erstellt der Report eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Batch-Input-Mappe, deren Namen mit &apos;-OK&apos; endet. Falls Fehler auftreten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird eine Mappe mit fehlerfreien und eine mit fehlerhaften</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Buchungssätzen erzeugt. Die Mappe mit fehlerhaften Buchungssätzen wird</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dann erzeugt, wenn der Betrag vom Scheckfile der Bank nicht mit dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Betrag im Zahlungsbeleg im SAP-System übereinstimmt. Der Name der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fehlerhaften Mappe endet immer mit &apos;-ERR&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Detail können folgende Fälle auftreten:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fall: Beleg gefunden (PAYR und BKPF), Beleg noch nicht ausgeglichen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beträge stimmen überein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Resultat: Update in PAYR, FB05-Buchungssatz in fehlerfreie Mappe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fall: Beleg gefunden (PAYR und BKPF), Beleg noch nicht ausgeglichen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beträge stimmen nicht überein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Resultat: Kein Update in PAYR, FB05-Buchungssatz in fehlerhafte Mappe,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Meldung im Verarbeitungsprotokoll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>In diesem Fall muß der Scheck nach einem erfolgreichen Abspielen der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Batch-Input-Mappe mit der Transaktion &apos;FCH6&apos; in der Tabelle PAYR als</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;eingelöst&apos; gekennzeichnet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fall: Beleg gefunden (PAYR und BKPF), Scheck laut PAYR bereits</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eingelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Resultat: Kein Update in PAYR, kein Batch-Input, Meldung im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verarbeitungsprotokoll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fall: Beleg gefunden (PAYR und BKPF), Scheck laut PAYR noch nicht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eingelöst, Beleg bereits ausgeglichen in BSEG.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Resultat: Update in PAYR, kein Batch-Input, Meldung im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verarbeitungsprotokoll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Call Transaktion-Modus:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieser Modus verhält sich analog zum Batch-Input-Modus. Der Unterschied</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>besteht darin, daß alle Buchungen, die fehlerfrei sind, sofort</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durchgeführt werden. Fehlerhafte Buchungen werden in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Batch-Input-Mappe gesammelt. Der Mappennamen setzt sich aus dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Reportparameter und &apos;-ERR&apos; für Error zusammen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Vor dem Ersteinsatz muß ein einfaches Programm geschrieben werden, das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>den Satzaufbau der Bankdaten in die Struktur dieses Reports umsetzt. Es</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird ein zeilenweiser Aufbau der Eingabedatei erwartet, das heißt, die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datensätze müssen durch das Absatztrennzeichen &lt;(&gt;&lt;CR&gt;&lt;LF&gt;&lt;)&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(=Carriage Return, Line Feed) getrennt sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Die Datei kann vom UNIX-Datei-System oder von einer Diskette eingelesen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden. Falls sie von einer Diskette eingelesen wird, muß vor dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dateinamen der Laufwerksname angegeben werden (z.B.:  A:CHECK.TXT).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Außerdem muß das entsprechende Feld auf dem Einstiegsdynpro markiert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Im Einstellungsmenü der Buchhaltung muß in der Hausbankentabelle die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bank bei der die Schecks eingelöst wurden gepflegt sein. Dabei muß das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hauptbuchkonto angegeben werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FUNKTION_AUSFÜHREN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;DEVICE&amp; = &apos;SCREEN&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;DS:TRAN.FI12&gt;Funktion ausführen&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Das Verrechnungskonto, auf das die Personalabrechnungsschecks als</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Summenbuchung gebucht werden, muss in der Bankenauswahl des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Customizings des Zahlprogramms festgelegt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Sie müssen zu dem Buchungskreis, der Hausbank, dem Hausbankkonto, der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Währung und dem benutzen Zahlweg ein entsprechendes Sachkonto als</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bankunterkonto gepflegt haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FUNKTION_AUSFÜHREN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;DEVICE&amp; = &apos;SCREEN&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;DS:TRAN.FI12&gt;Funktion ausführen&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;output&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es wird folgendes ausgegeben:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Protokoll der eingelesenen Datensätze</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Verarbeitungsprotokoll (kurz oder ausführlich)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Buchungsprotokoll</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZRFEBCK00</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00113</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZRFEBCK00</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Program RFEBCK00 imports data on cashed checks delivered by the bank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>In the case of prenumbered checks, this program distinguishes payroll</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>accounting checks from other checks.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Payroll accounting checks</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>All payroll accounting checks identified as such from the check number</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in the file, and which have neither been voided or cashed, are marked</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as &quot;cashed&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>For those checks that have already been voided or cashed, the system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>outputs a message to this effect.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system groups payroll accounting checks according to the following</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>criteria in the check register:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Identification</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Date of posting</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Business area</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Currency</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Checks grouped according to this criteria are then listed with their</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>check numbers.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Each group can now be compressed and the totals posted on account</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(clearing account to bank account) if you set the indicator &quot;Post</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>payroll accounting checks&quot; on the selection screen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If the posting is successful, the system stores the document number of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the posting in the check register for each check relating to the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>compressed posting. This enables you to determine which checks were</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posted together as a document.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system displays the date the posting was carried out and the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>identification in the field &quot;allocation number&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If you do not set the indicator &quot;Post payroll accounting checks&quot;, the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system does not carry out any postings, and the total amount and the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>currency of the totals posting is included in the list. You will then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>need to carry out the posting manually.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Note:&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If you want to post payroll accounting checks, make sure that you</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>always set the indicator &quot;Post immediately&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;Other checks&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>For these checks, program RFEBCK00 creates clearing postings (outgoing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>check account to bank account) and marks the checks that could be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>successfully posted as &quot;cashed&quot; in the check register.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The clearing postings can be placed in a batch input file (batch input</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mode) or be posted immediately (call transaction mode).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;zh&gt;General information&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Since there is no standard for data on cashed checks in the USA and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>most other countries, a preprocessing program is needed to convert the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bank format to the entry format of this program. The entry format of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>this program consists of two record types: header records (CHECK_HEAD)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and memo records (CHECK_REC).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>A header record (CHECK_HEAD) is necessary for each bank account to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>which checks can be debited. The bank key (bank number) and bank</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>account are in this record type. The house bank table is read using</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>this information to determine the company code and the G/L account for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the bank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>A memo record is necessary for each check (CHECK_REC).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The CHECK_HEAD and CHECK_REC structures are defined in the Data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dictionary.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Batch input mode:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If no errors occur, the report creates a batch input session whose name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ends with &apos;-OK&apos;. If errors occur, a session is generated with</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>error-free posting records and one with incorrect posting records. The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>session with incorrect posting records is then generated if the amount</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of the bank check file does not correspond to the amount in the payment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document in the SAP System. The name of the incorrect session always</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ends with &apos;-ERR&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The following scenarios can occur:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Document found (PAYR and BKPF), document not yet cleared, amounts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>correspond.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Result: Update in PAYR, FB05 posting record in error-free session.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Document found (PAYR and BKPF), document not yet cleared, amounts do</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>not correspond.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Result: No update in PAYR, FB05 posting record in session with errors,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message in processing log.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>In this case, the check must be marked as &quot;paid&quot; in table PAYR after</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>successful processing of the batch input session with transaction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;FCH6&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Case: Document found (PAYR and BKPF), check already paid according to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PAYR.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Result: No update in PAYR, no batch input, message in processing log.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Case: Document found (PAYR and BKPF), check not yet paid according to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PAYR, document already cleared in BSEG.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Result: Update in PAYR, no batch input, message in processing log.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Call transaction mode:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This mode functions similarly to batch input mode, the difference being</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>that all error-free postings are carried out immediately. Incorrect</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>postings are collected in a batch input session. The session name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>consists of the program parameter and &quot;-ERR&quot; for error.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Before using this program for the first time, you must write a simple</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>program which converts the record layout of the bank data into the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>structure of this program. The structure of the input file needs to be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>line by line, meaning that the data records must be separated by the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>paragraph break character &lt;(&gt;&lt;&lt;)&gt;CR&gt;&lt;(&gt;&lt;&lt;)&gt;LF&gt; (=carriage return, line</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>feed).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The file can be imported from the UNIX file system or from a disk. If</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>it is imported from a disk, the drive name must be specified before the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>file name (for example:  A:CHECK.TXT). The corresponding field on the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>initial screen must also be selected.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The bank at which the checks were cashed must be maintained in the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>house bank table under Customizing for Financial Accounting and you</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>must specify the G/L account for this.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FUNKTION_AUSFÜHREN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;DEVICE&amp; = &apos;SCREEN&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;DS:TRAN.FI12&gt;Proceed&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The clearing account to which the payroll accounting check totals are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posted must be defined in the bank selection in the Customizing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>settings for the payment program. You need to maintain an appropriate</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>G/L account as bank subaccount for the company code, house bank, house</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bank account, the currency and the payment method used.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FUNKTION_AUSFÜHREN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;DEVICE&amp; = &apos;SCREEN&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;DS:TRAN.FI12&gt;Proceed&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>END IF</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The following is output:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Log of the data records imported</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Processing log (summarized or detailed)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Posting log</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

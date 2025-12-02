@@ -1,0 +1,17 @@
+@AbapCatalog.sqlViewName: 'ZFI45_5'
+@ClientDependent: true
+@AbapCatalog.compiler.compareFilter: true
+@EndUserText.label: 'ZFI45_5'
+define view ZZFI45_5 as 
+SELECT FROM ZFI45_3
+{
+LIFNR,IBAN,BANKN,BANKL,BVTYP
+} 
+--WHERE LIFNR='0010000751'
+UNION
+SELECT DISTINCT FROM ZFI45_3 A 
+INNER JOIN ZFI45_4 B ON A.IBAN=B.IBAN
+{
+A.LIFNR,A.IBAN,A.BANKN,A.BANKL,'' AS BVTYP
+}
+--WHERE A.LIFNR='0010000751' AND A.MANDT=100

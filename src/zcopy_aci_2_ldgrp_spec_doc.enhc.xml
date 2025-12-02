@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SHORTTEXT>COPY_ACI_2_LDGRP_SPEC_DOC</SHORTTEXT>
+   <ENH_CHILDS>
+    <ENHNAME>ZADD_CURTP_LD_CMP_TO_ACCCR</ENHNAME>
+    <ENHNAME>ZCOPY_ACI_2_LDGRP_SPEC_DOC</ENHNAME>
+   </ENH_CHILDS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

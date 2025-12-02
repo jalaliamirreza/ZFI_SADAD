@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Fi function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_FGLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_FGL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZBRZ_FI_UPDATE_VBRK_XBLNR</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Update vbrk xblnr</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>VBELN</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>XBLNR</PARAMETER>
+       <TYP>XBLNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XBLNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Document Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFI_CONVERT_AMOUNT_TO_TEXT</FUNCNAME>
+     <SHORT_TEXT>Conver amount to text</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>AMOUNT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>P</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WAERS</PARAMETER>
+       <DEFAULT>&apos;IRR&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WAERS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>TEXT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>DATA_TYPE_MISMATCH</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>AMOUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Amount in document currency</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WAERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Currency Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>amount in text</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_TYPE_MISMATCH</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Data Type Mismatch</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFI_INTERFACE_00001050</FUNCNAME>
+     <SHORT_TEXT>Schnittstellenbeschreibung zum Event 00001050</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_XVBUP</PARAMETER>
+       <DBFIELD>OFIWA-XVBUP</DBFIELD>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_BKP1</PARAMETER>
+       <DBSTRUCT>BKP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <DBSTRUCT>BKPF</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <DBSTRUCT>BSEC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSED</PARAMETER>
+       <DBSTRUCT>BSED</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <DBSTRUCT>BSEG</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSET</PARAMETER>
+       <DBSTRUCT>BSET</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEU</PARAMETER>
+       <DBSTRUCT>BSEU</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_XVBUP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kennzeichen: Verbuchung in update task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Zusatzdaten Belegkopf</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegköpfe</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CPD-Daten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Wechseldaten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegzeilen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Steuerdaten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Verbuchungsinfo pro Belegzeile</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFI_PROCESS_00001030</FUNCNAME>
+     <SHORT_TEXT>Schnittstellenbeschreibung zum Event 00001030</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_BKDF</PARAMETER>
+       <DBFIELD>BKDF</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_UF05A</PARAMETER>
+       <DBFIELD>UF05A</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_XVBUP</PARAMETER>
+       <DBFIELD>OFIWA-XVBUP</DBFIELD>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_AUSZ1</PARAMETER>
+       <DBSTRUCT>AUSZ1</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_AUSZ2</PARAMETER>
+       <DBSTRUCT>AUSZ2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_AUSZ3</PARAMETER>
+       <DBSTRUCT>AUSZ_CLR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BKP1</PARAMETER>
+       <DBSTRUCT>BKP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <DBSTRUCT>BKPF</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <DBSTRUCT>BSEC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSED</PARAMETER>
+       <DBSTRUCT>BSED</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <DBSTRUCT>BSEG</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSET</PARAMETER>
+       <DBSTRUCT>BSET</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEU</PARAMETER>
+       <DBSTRUCT>BSEU</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_BKDF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dauerbuchungsdaten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_UF05A</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Hilfsfelder für temporäre Belege</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_XVBUP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kennzeichen: Verbuchung in update task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_AUSZ1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Auszugleichende Positionen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_AUSZ2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ausgleichsaktionen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_AUSZ3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ausgleichsaktionen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Zusatzinformationen pro Belegkopf</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegköpfe</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CPD-Daten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Wechseldaten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegzeilen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Steuerdaten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Verbuchungsinformation pro Belegzeile</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFI_PROCESS_00001120</FUNCNAME>
+     <SHORT_TEXT>Beschreibung der Prozess-Schnittstelle 00001120</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_BKDF</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BKDF</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>I_BKDFSUB</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BKDF_SUBST</TYP>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <DBSTRUCT>BKPF</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <DBSTRUCT>BSEG</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BKPFSUB</PARAMETER>
+       <DBSTRUCT>BKPF_SUBST</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEGSUB</PARAMETER>
+       <DBSTRUCT>BSEG_SUBST</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <DBSTRUCT>BSEC</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_BKDF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegkopfergänzung für Dauerbuchung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKPF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegköpfe</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegzeilen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BKPFSUB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inhalte der substituierten BKPF-Felder</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEGSUB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inhalte der substituierten BSEG-Felder</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BSEC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Belegsegment CPD-Daten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BKDFSUB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Prozess-Schnittstellen: Substituierbare Felder beim Buchen</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZGENERATE_XBLNR_FOR_SD</FUNCNAME>
+     <SHORT_TEXT>generate document number for sd document</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DOCTYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BLART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BUDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BUDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BUKRS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BUKRS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>XBLNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XBLNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>LASTBUDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BUDAT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>BUDAT_AFTER_TODAY</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>BUDAT_BEFORE_LAST_DOCUMENT</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_DOCCLAS_FOR_DOCTYPE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DOCTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Posting Date in the Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUKRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Company Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XBLNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LASTBUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Posting Date in the Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUDAT_AFTER_TODAY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Document date is after today</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUDAT_BEFORE_LAST_DOCUMENT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Document date before last document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_DOCCLAS_FOR_DOCTYPE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No Document class for document type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZFI_INTERFACE_00001050>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_INTERFACE_00001050</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0009</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_INTERFACE_00001050</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Verbuchung, RW-Schnittstelle&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001050&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Zeitpunkt liegt hinter dem Aufruf des Verbuchers fürs FI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(POST_DOCUMENT) in der Form FI_DOCUMENT_POST. Diese wird u.a. im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Baustein FI_DOCUMENT_POST aufgerufen (RW-Schnittstelle).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SCHNITTSTELLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es werden alle relevanten Daten zum aktuellen Beleg übergeben. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kennzeichen I_XVBUP dient als reine Information, daß der SAP-Standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchron verbucht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>Damit darf in der Zusatzkomponente keine schreibende Datenbankaktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgeführt werden !!</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Verbuchung (auch der Add-On-spezifischen Tabellen) wird durch den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>COMMIT WORK des Standardablaufes ausgeführt. Falls Ihr</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbaustein nicht über RFC gerufen wird, veranlassen Sie stets</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchrone Verbuchung mit dem Zusatz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_INTERFACE_00001050</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00020</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_INTERFACE_00001050</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Update posting, FI interface&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001050&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX LANGUAGE EN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This Event is reached after calling up the update function module for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>FI (POST_DOCUMENT) in the form routine FI_DOCUMENT_POST. One of the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>function modules in which this routine is called up is FI_DOCUMENT_POST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(FI interface).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>INTERFACE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>All data relevant to the current document is transferred. The indicator</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>I_XVBUP serves soley to inform you that the SAP standard system posts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchronously.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>It follows that no database activities involving the writing of data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>may be carried out in the additional component.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The update including that of the tables specific to Add-ons are carried</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>out by the COMMIT WORK of the standard process. If your function module</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is not accessed via RFC, you should always initiate asynchronous update</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posting using the ABAP statement</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_INTERFACE_00001050>
+   <LONGTEXTS_ZFI_PROCESS_00001030>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PROCESS_00001030</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0006</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PROCESS_00001030</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Beleg buchen, Verbuchung&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001030&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Zeitpunkt liegt hinter dem Aufruf des Verbuchers fürs FI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(POST_DOCUMENT) und auch nach dem Aufruf des Interface-Anteils.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SCHNITTSTELLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>An die Zusatzkomponente werden alle aktuellen und für die Verbuchung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>relevanten Belegdaten sowie diverse Steuerparameter übergeben. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kennzeichen I_XVBUP dient als reine Information, daß der SAP-Standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchron verbucht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>Damit darf in der Zusatzkomponente keine schreibende Datenbankaktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgeführt werden !!</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Verbuchung (auch der Add-On-spezifischen Tabellen) wird durch den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>COMMIT WORK des Standardablaufes ausgeführt. Falls Ihr</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbaustein nicht über RFC gerufen wird, veranlassen Sie stets</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchrone Verbuchung mit dem Zusatz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PROCESS_00001030</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PROCESS_00001030</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Document posting, update posting&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001030&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX LANGUAGE EN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This Event is reached prior to the update posting module for FI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(POST_DOCUMENT) and also following callup of the interface part.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>INTERFACE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>All current data, all document data required for the update, and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>various control parameters are transferred to the additional component.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>The indicator I_XVBUP is used for information purposes only - that the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SAP standard system carries out an update posting asynchronously.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>It follows that no database activities involving the writing of data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>may be carried out in the additional component.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The update posting (including tables specific to Add-ons) are carried</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>out by the COMMIT WORK of the standard process. If your function module</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is not accessed via RFC, you should always initiate asynchronous update</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posting using the ABAP statement:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_PROCESS_00001030>
+   <LONGTEXTS_ZFI_PROCESS_00001120>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PROCESS_00001120</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0012</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00029</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PROCESS_00001120</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Substitution Belegfelder&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001120&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;PROCESS&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Prozess wird immer dann erreicht, wenn vor dem Verbuchen eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beleges sämtliche Schlußprüfungen abgeschlossen sind. Zu diesem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunkt ist die Belegnummer jedoch noch nicht vergeben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SCHNITTSTELLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>An die Zusatzkomponente werden (nur für Informationszwecke) die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aktuellen Belegköpfe (mehr als einer z.B. bei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>buchungskreisübergreifenden Vorgängen), die korrespondierenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Belegzeilen sowie die Dauerbuchungsdaten zum Belegkopf und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CPD-Daten übergeben. Diese Daten dürfen nicht bearbeitet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Stattdessen werden zwei weitere Tabellen (T_BKPFSUB, T_BSEGSUB) und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Struktur BKDF_SUBSTübergeben. Diese sind gefüllt mit den Inhalten der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Felder, die substituierbar sind. Das Feld TABIX enthält eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeilennummer, die anzeigt aus welcher Zeile in T_BSEG bzw. T_BKPF die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Feldinhalte stammen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zu beachten: Nach der Substitution erfolgt keine weitere Prüfung. Eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bestehende Zahlsperre, z.B. auf Grund einer Workflowdefinition, darf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>nicht überschrieben werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In der 2. Zeile der Tabelle T_BSEG soll der Feldinhalt von SGTXT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Positionstext) mit dem Inhalt &apos;TEST&apos; substituiert werden. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erfordert im wesentlichen eine Anweisungsfolge der Form</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>READ TABLE T_BSEGSUB WITH KEY TABIX = 2.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>T_BSEGSUB-SGTXT = &apos;TEST&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>MODIFY T_BSEGSUB INDEX SY-TABIX.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Anweisungsfolge ist im eigenen Baustein zu codieren !!</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PROCESS_00001120</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0012</VERSION>
+      <TXTLINES>00028</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PROCESS_00001120</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Substitution document fields&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001120&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;PROCESS&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX LANGUAGE EN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This process is always reached when all the final checks have been</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>completed before a document is updated. However, at this stage, the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document number has not yet been assigned.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>INTERFACE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The current document headers (there will be more than one for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cross-company code transactions, for example), the corresponding line</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>items and the recurring entry data for the document header and the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>one-time account data are transferred to the additional component, for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information purposes only. You must not edit this data. Instead, two</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>additional tables (T_BKPFSUB and T_BSEGSUB) and the structure BKDF_SUBST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>are also transferred. The contents of the fields that can be substituted</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>are entered in these tables. Field TABIX contains a line number which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>shows from which line in T_BSEG or T_BKPF the field contents originate.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Note: There is no additional check after the substitution. You must not</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>overwrite an existing payment lock (for example, due to a workflow</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definition).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In the second line of table T_BSEG, the field contents from SGTXT (item</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>text) should be replaced by the entry &apos;TEST&apos;. This basically requires a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>statement sequence in the form</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>READ TABLE T_BSEGSUB WITH KEY TABIX = 2.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>T_BSEGSUB-SGTXT = &apos;TEST&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>MODIFY T_BSEGSUB INDEX SY-TABIX.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You must code this statement sequence in your own function module.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_PROCESS_00001120>
+  </asx:values>
+ </asx:abap>
+</abapGit>
